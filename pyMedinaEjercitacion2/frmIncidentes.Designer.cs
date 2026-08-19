@@ -46,6 +46,7 @@
             lblCritico.Size = new Size(45, 15);
             lblCritico.TabIndex = 0;
             lblCritico.Text = "Critico ";
+            lblCritico.Click += lblCritico_Click;
             // 
             // lblAlto
             // 
@@ -55,6 +56,7 @@
             lblAlto.Size = new Size(29, 15);
             lblAlto.TabIndex = 2;
             lblAlto.Text = "Alto";
+            lblAlto.Click += lblAlto_Click;
             // 
             // lblMedio
             // 
@@ -64,6 +66,7 @@
             lblMedio.Size = new Size(41, 15);
             lblMedio.TabIndex = 3;
             lblMedio.Text = "Medio";
+            lblMedio.Click += lblMedio_Click;
             // 
             // lblBajo
             // 
@@ -73,6 +76,7 @@
             lblBajo.Size = new Size(30, 15);
             lblBajo.TabIndex = 4;
             lblBajo.Text = "Bajo";
+            lblBajo.Click += lblBajo_Click;
             // 
             // lblResultadoBajo
             // 
@@ -125,7 +129,6 @@
             Controls.Add(lblCritico);
             Name = "frmIncidentes";
             Text = "SOC - - Incidentes";
-            Load += frmIncidentes_Load;
             ResumeLayout(false);
             PerformLayout();
         }
